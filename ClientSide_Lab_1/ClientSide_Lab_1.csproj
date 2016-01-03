@@ -75,6 +75,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Lab1.html" />
+    <Content Include="Scripts\Lab1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
