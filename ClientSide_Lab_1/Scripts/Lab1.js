@@ -3,4 +3,5 @@
 
     var result = Math.sqrt(numberinput1);
   
+    document.entire_site.calculated.value = result;
 }
