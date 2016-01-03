@@ -2,18 +2,17 @@
 
 function CalculateSquareRoot() {
     var numberinput1 = document.getElementById('numberinput').value;
-
     var result = Math.sqrt(numberinput1);
-  
     document.getElementById('calculatedroot').value = result;
 }
 
 //Uppgift 2
+var basicpay = 15000;
+
 function CalculateFullPay() {
-    var basicpay = 15000;
     var sales = document.getElementById('salesinput').value;
 
-    var fullpay = 15000 + Math.round(sales * 0.09);
+    var fullpay = basicpay + Math.round(sales * 0.09);
 
     document.getElementById('calculatedpay').value = fullpay;
 }
@@ -23,7 +22,7 @@ var minutes = document.getElementById('convertedminutes');
 minutes.addEventListener('click', ConvertHoursToMinutes, false);
 
 var seconds = document.getElementById('convertedseconds');
-minutes.addEventListener('click', ConvertHoursToseconds, false);
+seconds.addEventListener('click', ConvertHoursToSeconds, false);
 
 function ConvertHoursToMinutes() {
     var hours = document.getElementById('hourinput').value;
@@ -35,5 +34,9 @@ function ConvertHoursToMinutes() {
 }
 
 function ConvertHoursToSeconds() {
+    var hours = document.getElementById('hourinput').value;
 
+    var convertToSeconds = (hours * 60) * 60;
+
+    document.getElementById('convertedseconds').innerHTML = convertToSeconds;
 }
