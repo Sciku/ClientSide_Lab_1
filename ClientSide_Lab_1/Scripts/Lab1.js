@@ -46,7 +46,7 @@ var sumofnumbers = document.getElementById('thesum');
 sumofnumbers.addEventListener('click', CalculateTheSum, false);
 
 var averageofnumbers = document.getElementById('theaverage');
-sumofnumbers.addEventListener('click', CalculateTheAverage, false);
+averageofnumbers.addEventListener('click', CalculateTheAverage, false);
 
 function CalculateTheSum() {
     var input1 = document.getElementById('number1').value;
@@ -56,5 +56,19 @@ function CalculateTheSum() {
     var calculatesum = parseInt(input1) + parseInt(input2) + parseInt(input3);
 
     document.getElementById('thesum').innerHTML = calculatesum
+}
 
+function CalculateTheAverage() {
+    var numberofinputs = 3;
+
+    var input1 = document.getElementById('number1').value;
+    var input2 = document.getElementById('number2').value;
+    var input3 = document.getElementById('number3').value;
+
+
+    var calculatesum = parseInt(input1) + parseInt(input2) + parseInt(input3);
+
+    var calculateaverage = calculatesum / numberofinputs;
+
+    document.getElementById('theaverage').innerHTML = calculateaverage
 }
