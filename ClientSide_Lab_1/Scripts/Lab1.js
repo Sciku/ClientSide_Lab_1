@@ -1,29 +1,29 @@
 ﻿//Uppgift 1
 
 function CalculateSquareRoot() {
-    var numberinput1 = document.entire_site.numberinput.value;
+    var numberinput1 = document.getElementById('numberinput').value;
 
     var result = Math.sqrt(numberinput1);
   
-    document.entire_site.calculatedroot.value = result;
+    document.getElementById('calculatedroot').value = result;
 }
 
 //Uppgift 2
 function CalculateFullPay() {
     var basicpay = 15000;
-    var sales = document.entire_site.salesinput.value;
+    var sales = document.getElementById('salesinput').value;
 
     var fullpay = 15000 + Math.round(sales * 0.09);
 
-    document.entire_site.calculatedpay.value = fullpay;
+    document.getElementById('calculatedpay').value = fullpay;
 }
 
 //Uppgift 3
-var convertedminutes = document.getElementById('convertedminutes');
+var minutes = document.getElementById('convertedminutes');
 minutes.addEventListener('click', ConvertHoursToMinutes, false);
 
-var convertedseconds = document.getElementById('convertedseconds');
-minutes.addEventListener('hover', ConvertHoursToseconds, false);
+var seconds = document.getElementById('convertedseconds');
+minutes.addEventListener('click', ConvertHoursToseconds, false);
 
 function ConvertHoursToMinutes() {
     var hours = document.getElementById('hourinput').value;

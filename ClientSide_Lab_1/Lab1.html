@@ -5,25 +5,24 @@
     <meta charset="utf-8" />
 </head>
 <body>
-    <form name="entire_site">
         <div class="Uppgift1">
             <span>Skriv in ett nummer</span>
-            <input name="numberinput" />
+            <input id="numberinput" />
             <br />
             <input type="button" value="Räkna ut" onclick="CalculateSquareRoot()" />
             <br />
             <span>Kvadratroten är</span>
-            <input name="calculatedroot" />
+            <input id="calculatedroot" />
         </div>
         <br/>
         <div class="Uppgift2">
             <span>Skriv in en försäljningssumma</span>
-            <input name="salesinput" />
+            <input id="salesinput" />
             <br />
             <input type="button" value="Räkna ut total lön" onclick="CalculateFullPay()" />
             <br />
             <span>Den totala lönen säljaren får är</span>
-            <input type="text" name="calculatedpay" />
+            <input id="calculatedpay" />
         </div>
         <br />
         <div class="Uppgift3">
@@ -34,12 +33,9 @@
             <span id="convertedminutes">Klicka här!</span>
             <br />
             <span>Antalet sekunder</span>
-            <span id="convertedseconds">Håll muspekaren här!</span>
+            <span id="convertedseconds">Klicka här!</span>
 
         </div>
-
-
-    </form>
 </body>
 </html>
 <script src="Scripts/Lab1.js"></script>
