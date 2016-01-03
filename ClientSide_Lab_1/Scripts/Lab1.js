@@ -30,7 +30,6 @@ function ConvertHoursToMinutes() {
     var convertToMinutes = hours * 60;
 
     document.getElementById('convertedminutes').innerHTML = convertToMinutes;
-
 }
 
 function ConvertHoursToSeconds() {
