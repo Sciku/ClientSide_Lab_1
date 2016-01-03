@@ -3,5 +3,7 @@
 
     var result = Math.sqrt(numberinput1);
   
-    document.entire_site.calculated.value = result;
+    document.entire_site.calculatedroot.value = result;
 }
+
+function CalculateFullPay()
