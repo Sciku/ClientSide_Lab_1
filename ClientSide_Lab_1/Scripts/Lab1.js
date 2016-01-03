@@ -84,11 +84,15 @@ conversiontodollars.addEventListener('click', ConvertSekToDollars, false);
 function ConvertSekToPounds() {
     var SEK = document.getElementById('crownsinput').value;
 
-    var convertToPounds = SEK * 12;
+    var convertToPounds = SEK / 12;
 
     document.getElementById('convertedtopounds').innerHTML = convertToPounds;
 }
 
 function ConvertSekToDollars() {
+    var SEK = document.getElementById('crownsinput').value;
 
+    var convertToDollars = SEK / 6;
+
+    document.getElementById('convertedtodollars').innerHTML = convertToDollars;
 }
