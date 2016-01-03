@@ -72,3 +72,23 @@ function CalculateTheAverage() {
 
     document.getElementById('theaverage').innerHTML = calculateaverage
 }
+
+//Uppgift 5
+
+var conversiontopounds = document.getElementById('convertedtopounds')
+conversiontopounds.addEventListener('click', ConvertSekToPounds, false);
+
+var conversiontodollars = document.getElementById('convertedtodollars')
+conversiontodollars.addEventListener('click', ConvertSekToDollars, false);
+
+function ConvertSekToPounds() {
+    var SEK = document.getElementById('crownsinput').value;
+
+    var convertToPounds = SEK * 12;
+
+    document.getElementById('convertedtopounds').innerHTML = convertToPounds;
+}
+
+function ConvertSekToDollars() {
+
+}
