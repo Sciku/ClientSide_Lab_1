@@ -39,3 +39,22 @@ function ConvertHoursToSeconds() {
 
     document.getElementById('convertedseconds').innerHTML = convertToSeconds;
 }
+
+//Uppgift 4
+
+var sumofnumbers = document.getElementById('thesum');
+sumofnumbers.addEventListener('click', CalculateTheSum, false);
+
+var averageofnumbers = document.getElementById('theaverage');
+sumofnumbers.addEventListener('click', CalculateTheAverage, false);
+
+function CalculateTheSum() {
+    var input1 = document.getElementById('number1').value;
+    var input2 = document.getElementById('number2').value;
+    var input3 = document.getElementById('number3').value;
+
+    var calculatesum = parseInt(input1) + parseInt(input2) + parseInt(input3);
+
+    document.getElementById('thesum').innerHTML = calculatesum
+
+}
