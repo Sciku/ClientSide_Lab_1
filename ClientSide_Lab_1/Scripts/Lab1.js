@@ -53,7 +53,7 @@ function CalculateTheSum() {
     var input2 = document.getElementById('number2').value;
     var input3 = document.getElementById('number3').value;
 
-    var calculatesum = parseInt(input1) + parseInt(input2) + parseInt(input3);
+    var calculatesum = +input1 + +input2 + +input3;
 
     document.getElementById('thesum').innerHTML = calculatesum
 }
